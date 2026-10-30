@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "123456789012",
+    "project_id": "rungta-attendance-system",
+    "storage_bucket": "rungta-attendance-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123456789012:android:abcdef1234567890",
+        "android_client_info": {
+          "package_name": "com.example.rungta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDummyKeyForRungtaAttendanceSystemMajorProject12345"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": "1"
+        },
+        "app_measurement_service": {
+          "status": "1"
+        },
+        "cloud_messaging": {
+          "status": "2",
+          "other_platform_oauth_client": []
+        },
+        "app_invite_service": {
+          "status": "1"
+        },
+        "gcm_service": {
+          "status": "1"
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

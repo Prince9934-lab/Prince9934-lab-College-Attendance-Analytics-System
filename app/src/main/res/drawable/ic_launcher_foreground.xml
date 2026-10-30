@@ -1,0 +1,26 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="240"
+    android:viewportHeight="240">
+
+    <!-- Red Tilted Oval Logo Body (Centered with proper spacing) -->
+    <path
+        android:fillColor="#E53935"
+        android:pathData="M70,75 C40,90 30,140 60,175 C90,210 150,215 185,185 C220,155 210,95 175,70 C140,45 100,60 70,75 Z" />
+
+    <!-- Head Dot (Black) -->
+    <path
+        android:fillColor="#121212"
+        android:pathData="M150,45 A15,15 0 1,1 150,15 A15,15 0 1,1 150,45 Z" />
+
+    <!-- White Human Figure Cutouts -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M95,140 C110,120 125,95 130,85 C135,95 145,120 160,145 C140,165 115,175 95,140 Z" />
+
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M130,150 C140,135 155,115 165,105 C170,115 180,135 190,160 C170,175 150,175 130,150 Z" />
+
+</vector>

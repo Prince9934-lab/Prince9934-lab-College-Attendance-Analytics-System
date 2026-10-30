@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_students"
+        android:icon="@drawable/ic_student_vector"
+        android:title="Students" />
+    <item
+        android:id="@+id/nav_attendance"
+        android:icon="@drawable/ic_present_vector"
+        android:title="Attendance" />
+    <item
+        android:id="@+id/nav_analytics"
+        android:icon="@drawable/ic_analytics_vector"
+        android:title="Analytics" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@drawable/ic_launcher_foreground"
+        android:title="Profile" />
+</menu>

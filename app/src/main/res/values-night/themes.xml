@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.RUNGTA" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/rungta_red</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/rungta_purple</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Background -->
+        <item name="android:colorBackground">@color/rungta_dark_bg</item>
+        <item name="colorSurface">@color/rungta_surface</item>
+        <item name="colorOnSurface">@color/white</item>
+    </style>
+</resources>

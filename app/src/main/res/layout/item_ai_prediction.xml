@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="8dp"
+    android:layout_marginVertical="8dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:strokeColor="?attr/colorOutlineVariant"
+    app:strokeWidth="1dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- AI Insight Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:layout_marginBottom="12dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="🤖 Explainable AI Insight"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorPrimary" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/tvRiskBadge"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:text="HIGH RISK"
+                android:textColor="#F44336"
+                android:textStyle="bold"
+                app:chipBackgroundColor="#FFEBEE"
+                app:chipStrokeColor="#F44336"
+                app:chipStrokeWidth="1dp" />
+        </LinearLayout>
+
+        <!-- Student Name & Roll Number -->
+        <TextView
+            android:id="@+id/tvStudentName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Rahul Kumar"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="?attr/colorOnSurface" />
+
+        <TextView
+            android:id="@+id/tvRollNo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Roll No: 101 | Dept: CSE"
+            android:textSize="13sp"
+            android:textColor="?attr/colorOnSurfaceVariant"
+            android:layout_marginBottom="12dp" />
+
+        <!-- 3-Month Trend Metrics Row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="8dp"
+            android:background="?attr/colorSurfaceVariant"
+            android:padding="8dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prev Month"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView
+                    android:id="@+id/tvPrevMonthPct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="85%"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last Month"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView
+                    android:id="@+id/tvLastMonthPct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="82%"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView
+                    android:id="@+id/tvCurrentPct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="78%"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurface" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Predicted"
+                    android:textSize="11sp"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+                <TextView
+                    android:id="@+id/tvPredictedPct"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="72%"
+                    android:textSize="13sp"
+                    android:textStyle="bold"
+                    android:textColor="#F44336" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Predicted Attendance Progress Bar -->
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:id="@+id/progressPredicted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:progress="72"
+            app:trackCornerRadius="4dp"
+            app:trackColor="?attr/colorSurfaceVariant"
+            app:indicatorColor="#F44336"
+            android:layout_marginBottom="12dp" />
+
+        <!-- Explainable AI Reason Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?attr/colorSurfaceVariant"
+            app:strokeWidth="0dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reason:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tvReason"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Attendance has decreased continuously for 3 months."
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Recommendation Card -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="0dp"
+            app:cardBackgroundColor="?attr/colorSurfaceVariant"
+            app:strokeWidth="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="12dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Recommendation:"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:textColor="?attr/colorOnSurfaceVariant" />
+
+                <TextView
+                    android:id="@+id/tvRecommendation"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Extra attendance monitoring required."
+                    android:textSize="13sp"
+                    android:textColor="?attr/colorOnSurface"
+                    android:layout_marginTop="2dp" />
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
